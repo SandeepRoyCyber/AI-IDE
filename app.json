@@ -1,7 +1,16 @@
 {
   "expo": {
     "name": "PocketCoder",
-    "slug": "PocketCoder",
-    "version": "1.0.0"
+    "slug": "pocketcoder",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "platforms": ["ios", "android"],
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.pocketcoder.app"
+    },
+    "android": {
+      "package": "com.pocketcoder.app"
+    }
   }
 }
