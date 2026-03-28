@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import {
   View, Text, ScrollView, TouchableOpacity,
-  ActivityIndicator, StyleSheet, SafeAreaView
+  ActivityIndicator, StyleSheet
 } from 'react-native';
+import { SafeAreaView } from 'react-native-safe-area-context';
 import { getDeviceProfile } from '../modules/deviceIntelligence';
 
 const BADGE_COLORS = {

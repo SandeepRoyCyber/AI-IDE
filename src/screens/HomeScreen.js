@@ -1,9 +1,10 @@
 import React, { useState, useRef } from 'react';
 import {
   View, Text, TextInput, TouchableOpacity,
-  FlatList, StyleSheet, SafeAreaView,
+  FlatList, StyleSheet,
   KeyboardAvoidingView, Platform, ActivityIndicator
 } from 'react-native';
+import { SafeAreaView } from 'react-native-safe-area-context';
 import { useInference } from '../hooks/useInference';
 import usePocketCoderStore from '../store';
 
