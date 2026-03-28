@@ -38,7 +38,7 @@ export default function App() {
   }, []);
 
   return (
-    <NavigationContainer>
+    <SafeAreaProvider><NavigationContainer>
       <Stack.Navigator
         screenOptions={{
           headerShown: false,
@@ -50,6 +50,6 @@ export default function App() {
         <Stack.Screen name="Models"   component={ModelsScreen} />
         <Stack.Screen name="Settings" component={SettingsScreen} />
       </Stack.Navigator>
-    </NavigationContainer>
+    </NavigationContainer></SafeAreaProvider>
   );
 }
