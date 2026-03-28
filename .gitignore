@@ -34,3 +34,23 @@ yarn-error.*
 
 # typescript
 *.tsbuildinfo
+
+# ─── PocketCoder ───────────────────────
+# Never commit AI model files - they are 0.4-4.5GB each
+*.gguf
+*.bin
+*.onnx
+*.tflite
+
+# Model download directory
+pocketcoder_models/
+
+# EAS build artifacts
+*.ipa
+*.apk
+*.aab
+
+# Local env files
+.env
+.env.local
+.env.development

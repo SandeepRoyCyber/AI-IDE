@@ -4,13 +4,35 @@
     "slug": "pocketcoder",
     "version": "1.0.0",
     "orientation": "portrait",
+    "owner": "sandeeproycyber",
     "platforms": ["ios", "android"],
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
     "ios": {
       "supportsTablet": false,
-      "bundleIdentifier": "com.pocketcoder.app"
+      "bundleIdentifier": "com.pocketcoder.app",
+      "infoPlist": {
+        "NSLocalNetworkUsageDescription": "PocketCoder uses local network to load AI models.",
+        "UIFileSharingEnabled": true,
+        "LSSupportsOpeningDocumentsInPlace": true
+      }
     },
     "android": {
-      "package": "com.pocketcoder.app"
+      "package": "com.pocketcoder.app",
+      "permissions": [
+        "READ_EXTERNAL_STORAGE",
+        "WRITE_EXTERNAL_STORAGE"
+      ]
+    },
+    "plugins": [
+      "expo-dev-client",
+      "expo-file-system"
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "pocketcoder"
+      }
     }
   }
 }
