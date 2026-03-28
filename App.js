@@ -10,6 +10,7 @@ import usePocketCoderStore from './src/store';
 import HomeScreen    from './src/screens/HomeScreen';
 import ModelsScreen  from './src/screens/ModelsScreen';
 import SettingsScreen from './src/screens/SettingsScreen';
+import EditorScreen from './src/screens/EditorScreen';
 
 const Stack = createNativeStackNavigator();
 
@@ -49,6 +50,7 @@ export default function App() {
         <Stack.Screen name="Home"     component={HomeScreen} />
         <Stack.Screen name="Models"   component={ModelsScreen} />
         <Stack.Screen name="Settings" component={SettingsScreen} />
+        <Stack.Screen name="Editor" component={EditorScreen} />
       </Stack.Navigator>
     </NavigationContainer></SafeAreaProvider>
   );

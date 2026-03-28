@@ -19,6 +19,7 @@
     "llama.rn": "^0.12.0-rc.2",
     "react": "19.2.0",
     "react-native": "0.83.4",
+    "react-native-code-editor": "^0.0.0",
     "react-native-safe-area-context": "~5.6.2",
     "react-native-screens": "~4.23.0",
     "zustand": "^5.0.12"
